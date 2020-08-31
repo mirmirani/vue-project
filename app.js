@@ -13,3 +13,20 @@ const app = new Vue({
     }
 });
 
+const app2 = new Vue({
+    el: "#app2",
+    data: {
+        buttonOffsets: {
+            top: null,
+            left: null
+        }
+    },
+    methods: {
+        moveButton: function(e) {
+            this.buttonOffsets = {
+                top: `${Math.random()*window.innerHeight}px`,
+                left: `${Math.random()*window.innerWidth}px`,
+            }
+        }
+    }
+})

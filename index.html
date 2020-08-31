@@ -22,11 +22,16 @@ class="box content has-text-centered"
 <h2 class="title is-1"> {{ count }} </h2>
 
 <!-- create the button that will increment the count -->
-<a class="button is-danger" @click.prevent="incrementCounter">Count Up</a>
-
-
-
-other 
+<a class="button is-danger" @click.prevent="incrementCounter">Count Up</a> 
+</div>
+<div id='app2'>
+  <a 
+    class="button is-info is-crazy"
+    :style="buttonOffsets"
+    @mouseenter="moveButton"
+  >
+  Catch me if you can!
+  </a>
 </div>
     
 </body>
